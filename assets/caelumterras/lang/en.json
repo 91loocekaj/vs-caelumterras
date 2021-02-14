@@ -1,0 +1,10 @@
+{
+  "item-creature-locust-drone" : "Locust Drone",
+  "item-dead-creature-locust-drone" : "Destroyed Locust Drone",
+  "game:prefixandcreature-locustdrone" : "a locust drone",
+
+  "block-mantle-fiery": "Semi-Molten Mantle",
+  "block-skep-vine-empty-*": "Empty Skep(Vine)",
+  "block-skep-vine-populated-*": "Populated Skep(Vine)",
+  
+}

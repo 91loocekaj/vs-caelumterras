@@ -1,0 +1,345 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": true
+	},
+	"textureWidth": 64,
+	"textureHeight": 64,
+	"textureSizes": {
+	},
+	"textures": {
+		"bronze": "game:entity/locust/bronze"
+	},
+	"elements": [
+		{
+			"name": "Body",
+			"from": [ 5.0, 3.0, 5.0 ],
+			"to": [ 11.0, 12.0, 11.0 ],
+			"uv": [ 33.5, 49.0 ],
+			"rotationOrigin": [ 8.0, 8.0, 8.0 ],
+			"rotationY": 90.0,
+			"faces": {
+				"north": { "texture": "#bronze", "uv": [ 34.0, 55.0, 40.0, 64.0 ] },
+				"east": { "texture": "#bronze", "uv": [ 40.0, 55.0, 49.0, 61.0 ], "rotation": 270 },
+				"south": { "texture": "#bronze", "uv": [ 49.0, 55.0, 55.0, 64.0 ], "rotation": 180 },
+				"west": { "texture": "#bronze", "uv": [ 55.0, 55.0, 64.0, 61.0 ], "rotation": 90 },
+				"up": { "texture": "#bronze", "uv": [ 34.0, 49.0, 40.0, 55.0 ], "rotation": 180 },
+				"down": { "texture": "#bronze", "uv": [ 40.0, 49.0, 46.0, 55.0 ] }
+			},
+			"children": [
+				{
+					"name": "Bottom",
+					"from": [ -1.0, -3.0, -1.0 ],
+					"to": [ 7.0, 0.0, 7.0 ],
+					"uv": [ 32.0, 35.5 ],
+					"rotationOrigin": [ -1.0, -3.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 32.0, 44.0, 40.0, 47.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 40.0, 44.0, 48.0, 47.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 48.0, 44.0, 56.0, 47.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 56.0, 44.0, 64.0, 47.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 32.0, 36.0, 40.0, 44.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 40.0, 36.0, 48.0, 44.0 ] }
+					}
+				},
+				{
+					"name": "Top",
+					"from": [ -1.0, 9.0, -1.0 ],
+					"to": [ 7.0, 12.0, 7.0 ],
+					"uv": [ 31.5, 36.0 ],
+					"rotationOrigin": [ -1.0, 9.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 32.0, 44.0, 40.0, 47.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 40.0, 44.0, 48.0, 47.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 48.0, 44.0, 56.0, 47.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 56.0, 44.0, 64.0, 47.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 32.0, 36.0, 40.0, 44.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 40.0, 36.0, 48.0, 44.0 ] }
+					}
+				},
+				{
+					"name": "reye",
+					"from": [ 1.0, 7.0, -1.0 ],
+					"to": [ 2.0, 8.0, 0.0 ],
+					"uv": [ 4.0, 24.0 ],
+					"rotationOrigin": [ 1.0, 7.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 4.0, 25.0, 5.0, 26.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 5.0, 25.0, 6.0, 26.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 6.0, 25.0, 7.0, 26.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 7.0, 25.0, 8.0, 26.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 4.0, 24.0, 5.0, 25.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 5.0, 24.0, 6.0, 25.0 ] }
+					}
+				},
+				{
+					"name": "leye",
+					"from": [ 4.0, 7.0, -1.0 ],
+					"to": [ 5.0, 8.0, 0.0 ],
+					"uv": [ 11.5, 22.5 ],
+					"rotationOrigin": [ 4.0, 7.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 12.0, 24.0, 13.0, 25.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 13.0, 24.0, 14.0, 25.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 14.0, 24.0, 15.0, 25.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 15.0, 24.0, 16.0, 25.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 12.0, 23.0, 13.0, 24.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 13.0, 23.0, 14.0, 24.0 ] }
+					}
+				},
+				{
+					"name": "cannon",
+					"from": [ 1.5, 1.0, -6.0 ],
+					"to": [ 4.5, 4.0, 0.0 ],
+					"uv": [ 1.0, 54.0 ],
+					"rotationOrigin": [ 3.0, 2.5, -6.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 1.0, 60.0, 4.0, 63.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 4.0, 60.0, 10.0, 63.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 10.0, 60.0, 13.0, 63.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 13.0, 60.0, 19.0, 63.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 1.0, 54.0, 4.0, 60.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 4.0, 54.0, 7.0, 60.0 ] }
+					}
+				},
+				{
+					"name": "axle",
+					"from": [ 2.0, 12.0, 2.0 ],
+					"to": [ 4.0, 16.0, 4.0 ],
+					"uv": [ 18.0, 3.5 ],
+					"rotationOrigin": [ 2.0, 12.0, 2.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 18.0, 6.0, 20.0, 10.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 20.0, 6.0, 22.0, 10.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 22.0, 6.0, 24.0, 10.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 24.0, 6.0, 26.0, 10.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 18.0, 4.0, 20.0, 6.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 20.0, 4.0, 22.0, 6.0 ] }
+					}
+				},
+				{
+					"name": "propeller",
+					"from": [ 0.0, 13.0, 0.0 ],
+					"to": [ 6.0, 15.0, 6.0 ],
+					"uv": [ 1.0, 56.0 ],
+					"rotationOrigin": [ 3.0, 13.0, 3.0 ],
+					"faces": {
+						"north": { "texture": "#bronze", "uv": [ 1.0, 62.0, 7.0, 64.0 ] },
+						"east": { "texture": "#bronze", "uv": [ 7.0, 62.0, 13.0, 64.0 ] },
+						"south": { "texture": "#bronze", "uv": [ 13.0, 62.0, 19.0, 64.0 ] },
+						"west": { "texture": "#bronze", "uv": [ 19.0, 62.0, 25.0, 64.0 ] },
+						"up": { "texture": "#bronze", "uv": [ 1.0, 56.0, 7.0, 62.0 ] },
+						"down": { "texture": "#bronze", "uv": [ 7.0, 56.0, 13.0, 62.0 ] }
+					},
+					"children": [
+						{
+							"name": "rod1",
+							"from": [ -2.0, 0.5, 2.5 ],
+							"to": [ 8.0, 1.5, 3.5 ],
+							"uv": [ 7.0, 1.0 ],
+							"rotationOrigin": [ 3.0, 1.5, 3.0 ],
+							"faces": {
+								"north": { "texture": "#bronze", "uv": [ 7.0, 2.0, 17.0, 3.0 ] },
+								"east": { "texture": "#bronze", "uv": [ 17.0, 2.0, 18.0, 3.0 ] },
+								"south": { "texture": "#bronze", "uv": [ 18.0, 2.0, 28.0, 3.0 ] },
+								"west": { "texture": "#bronze", "uv": [ 28.0, 2.0, 29.0, 3.0 ] },
+								"up": { "texture": "#bronze", "uv": [ 7.0, 1.0, 17.0, 2.0 ] },
+								"down": { "texture": "#bronze", "uv": [ 17.0, 1.0, 27.0, 2.0 ] }
+							},
+							"children": [
+								{
+									"name": "Wing1",
+									"from": [ -16.0, -1.0, -1.0 ],
+									"to": [ 0.0, 2.0, -0.5 ],
+									"uv": [ 29.0, 11.5 ],
+									"rotationOrigin": [ -16.0, -1.0, 0.0 ],
+									"rotationX": 45.0,
+									"faces": {
+										"north": { "texture": "#bronze", "uv": [ 29.0, 13.0, 45.0, 16.0 ] },
+										"east": { "texture": "#bronze", "uv": [ 45.0, 13.0, 46.0, 16.0 ] },
+										"south": { "texture": "#bronze", "uv": [ 46.0, 13.0, 62.0, 16.0 ] },
+										"west": { "texture": "#bronze", "uv": [ 62.0, 13.0, 63.0, 16.0 ] },
+										"up": { "texture": "#bronze", "uv": [ 29.0, 12.0, 45.0, 13.0 ] },
+										"down": { "texture": "#bronze", "uv": [ 45.0, 12.0, 61.0, 13.0 ] }
+									}
+								},
+								{
+									"name": "Wing2",
+									"from": [ 10.0, -0.5, 1.7 ],
+									"to": [ 26.0, 2.5, 2.2 ],
+									"uv": [ 30.0, 11.5 ],
+									"rotationOrigin": [ 10.0, -1.0, 2.0 ],
+									"rotationX": -45.0,
+									"faces": {
+										"north": { "texture": "#bronze", "uv": [ 30.0, 13.0, 46.0, 16.0 ] },
+										"east": { "texture": "#bronze", "uv": [ 46.0, 13.0, 47.0, 16.0 ] },
+										"south": { "texture": "#bronze", "uv": [ 47.0, 13.0, 63.0, 16.0 ] },
+										"west": { "texture": "#bronze", "uv": [ 63.0, 13.0, 64.0, 16.0 ] },
+										"up": { "texture": "#bronze", "uv": [ 30.0, 12.0, 46.0, 13.0 ] },
+										"down": { "texture": "#bronze", "uv": [ 46.0, 12.0, 62.0, 13.0 ] }
+									}
+								}
+							]
+						},
+						{
+							"name": "rod2",
+							"from": [ -2.0, 0.5, 2.5 ],
+							"to": [ 8.0, 1.5, 3.5 ],
+							"uv": [ 4.0, 9.5 ],
+							"rotationOrigin": [ 3.0, 1.5, 3.0 ],
+							"rotationY": 90.0,
+							"faces": {
+								"north": { "texture": "#bronze", "uv": [ 4.0, 11.0, 14.0, 12.0 ] },
+								"east": { "texture": "#bronze", "uv": [ 14.0, 11.0, 15.0, 12.0 ] },
+								"south": { "texture": "#bronze", "uv": [ 15.0, 11.0, 25.0, 12.0 ] },
+								"west": { "texture": "#bronze", "uv": [ 25.0, 11.0, 26.0, 12.0 ] },
+								"up": { "texture": "#bronze", "uv": [ 4.0, 10.0, 14.0, 11.0 ] },
+								"down": { "texture": "#bronze", "uv": [ 14.0, 10.0, 24.0, 11.0 ] }
+							},
+							"children": [
+								{
+									"name": "Wing3",
+									"from": [ -16.0, -1.0, -1.0 ],
+									"to": [ 0.0, 2.0, -0.5 ],
+									"uv": [ 29.5, 10.5 ],
+									"rotationOrigin": [ -16.0, -1.0, 0.0 ],
+									"rotationX": 45.0,
+									"faces": {
+										"north": { "texture": "#bronze", "uv": [ 30.0, 12.0, 46.0, 15.0 ] },
+										"east": { "texture": "#bronze", "uv": [ 46.0, 12.0, 47.0, 15.0 ] },
+										"south": { "texture": "#bronze", "uv": [ 47.0, 12.0, 63.0, 15.0 ] },
+										"west": { "texture": "#bronze", "uv": [ 63.0, 12.0, 64.0, 15.0 ] },
+										"up": { "texture": "#bronze", "uv": [ 30.0, 11.0, 46.0, 12.0 ] },
+										"down": { "texture": "#bronze", "uv": [ 46.0, 11.0, 62.0, 12.0 ] }
+									}
+								},
+								{
+									"name": "Wing4",
+									"from": [ 10.0, -0.5, 1.7 ],
+									"to": [ 26.0, 2.5, 2.2 ],
+									"uv": [ 28.5, 11.5 ],
+									"rotationOrigin": [ 10.0, -1.0, 2.0 ],
+									"rotationX": -45.0,
+									"faces": {
+										"north": { "texture": "#bronze", "uv": [ 29.0, 13.0, 45.0, 16.0 ] },
+										"east": { "texture": "#bronze", "uv": [ 45.0, 13.0, 46.0, 16.0 ] },
+										"south": { "texture": "#bronze", "uv": [ 46.0, 13.0, 62.0, 16.0 ] },
+										"west": { "texture": "#bronze", "uv": [ 62.0, 13.0, 63.0, 16.0 ] },
+										"up": { "texture": "#bronze", "uv": [ 29.0, 12.0, 45.0, 13.0 ] },
+										"down": { "texture": "#bronze", "uv": [ 45.0, 12.0, 61.0, 13.0 ] }
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"animations": [
+		{
+			"name": "Fly",
+			"code": "fly",
+			"quantityframes": 30,
+			"onActivityStopped": "Rewind",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"cannon": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 4,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 22.5, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 8,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 45.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 12,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 67.5, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 16,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 90.0, "rotationZ": 0.0 },
+						"cannon": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 90.0 }
+					}
+				},
+				{
+					"frame": 20,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 112.5, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 24,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 135.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 28,
+					"elements": {
+						"Body": {  },
+						"propeller": { "rotationX": 0.0, "rotationY": 157.5, "rotationZ": 0.0 },
+						"cannon": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Die",
+			"code": "die",
+			"quantityframes": 30,
+			"onActivityStopped": "Stop",
+			"onAnimationEnd": "Hold",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Body": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"propeller": {  },
+						"rod1": {  },
+						"Wing1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Wing2": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"rod2": {  },
+						"Wing3": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Wing4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 29,
+					"elements": {
+						"Body": { "offsetX": -2.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 90.0 },
+						"propeller": {  },
+						"rod1": {  },
+						"Wing1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": -16.0, "rotationX": 45.0, "rotationY": -90.0, "rotationZ": 0.0 },
+						"Wing2": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": -1.0, "rotationX": -45.0, "rotationY": 90.0, "rotationZ": 0.0 },
+						"rod2": {  },
+						"Wing3": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": -3.5, "rotationX": -45.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Wing4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 6.0, "rotationX": -135.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				}
+			]
+		}
+	]
+}

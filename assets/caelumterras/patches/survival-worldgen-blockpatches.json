@@ -1,0 +1,8 @@
+[
+  {
+    "op": "replace",
+    "path": "/patches/15/chance",
+    "value": 5,
+    "file": "game:worldgen/blockpatches.json"
+  }
+]

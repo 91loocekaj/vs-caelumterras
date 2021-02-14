@@ -1,0 +1,108 @@
+[
+  {
+	ingredientPattern: "LLL	L_L	LLL",
+	ingredients: {
+		"L": { type: "block", code: "game:wildvine-*", quantity: 2 }
+	},
+	name: "stationaryvinebasket",
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "game:stationarybasket-east", attributes: { type: "vine" }  }
+},
+{
+	ingredientPattern: "LLL	LLL	LCL",
+	ingredients: {
+		"L": { type: "block", code: "game:wildvine-*", quantity: 2 },
+		"C": { type: "item", code: "game:clay-*", quantity: 2 }
+	},
+	name: "vineskep",
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "caelumterras:skep-vine-empty-east"  }
+},
+{
+	ingredientPattern: "_L_	LBL	CLC",
+	ingredients: {
+		"L": { type: "block", code: "game:wildvine-*" },
+		"C": { type: "item", code: "game:clay-*" },
+		"B": {
+			type: "block",
+			code: "game:bowl-honey",
+			returnedStack: { type: "block", code: "game:bowl-burned" }
+		}
+	},
+	name: "vinebeenade",
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "game:beenade-opened"  }
+},
+{
+	ingredientPattern: "L_L	LLL",
+	ingredients: {
+		"L": { type: "block", code: "game:wildvine-*", quantity: 2 }
+	},
+	name: "vinebasket",
+	width: 3,
+	height: 2,
+	output: { type: "item", code: "game:basket"  }
+},
+{
+  ingredientPattern: "CPC,CCC",
+  ingredients: {
+    "P": { type: "item", code: "game:hide-pelt-medium", quantity: 1 },
+    "C": { type: "block", code: "game:wildvine-*", quantity: 3 }
+  },
+  name: "vinehunterbackpack",
+  width: 3,
+  height: 2,
+  output: { type: "item", code: "game:hunterbackpack"  }
+},
+{
+  ingredientPattern: "CPC,CCC",
+  ingredients: {
+    "P": { type: "item", code: "game:hide-pelt-large", quantity: 1 },
+    "C": { type: "block", code: "game:wildvine-*", quantity: 3 }
+  },
+  name: "vinehunterbackpack",
+  width: 3,
+  height: 2,
+  output: { type: "item", code: "game:hunterbackpack"  }
+},
+{
+  ingredientPattern: "CPC,CCC",
+  ingredients: {
+    "P": { type: "item", code: "game:hide-pelt-huge", quantity: 1 },
+    "C": { type: "block", code: "game:wildvine-*", quantity: 3 }
+  },
+  name: "vinehunterbackpack",
+  width: 3,
+  height: 2,
+  output: { type: "item", code: "game:hunterbackpack"  }
+},
+{
+  ingredientPattern: "H	C",
+  ingredients: {
+    "C": { type: "block", code: "game:wildvine-*", quantity: 2 },
+    "H": { type: "block", code: "game:flower-horsetail-free", quantity: 4 }
+  },
+  width: 1,
+  height: 2,
+  output: { type: "item", code: "game:poultice-reed-horsetail", quantity: 4  }
+},
+
+{
+  ingredientPattern: "SBS	_C_",
+  ingredients: {
+    "C": { type: "block", code: "game:wildvine-*", quantity: 2 },
+    "S": { type: "item", code: "game:ore-sulfur" },
+    "B": {
+      type: "block",
+      code: "game:bowl-honey",
+      returnedStack: { type: "block", code: "game:bowl-burned" }
+    }
+  },
+  width: 3,
+  height: 2,
+  output: { type: "item", code: "game:poultice-reed-honey-sulfur", quantity: 4  }
+}
+]

@@ -1,0 +1,32 @@
+{
+	code: "caltrop",
+	class: "EntityProjectile",
+	hitboxSize: { x: 0.125, y: 0.125 },
+	client: {
+		size: 0.25,
+		renderer: "Shape",
+		shape: { base: "entity/caltrop" },
+		textures: {"all": { base: "game:item/resource/ironbloom" }},
+		behaviors: [
+			{ code: "passivephysics",
+				groundDragFactor: 1,
+				airDragFallingFactor: 0.25,
+				gravityFactor: 0.1
+			},
+			{ code: "interpolateposition" }
+		],
+	},
+	server: {
+		behaviors: [
+			{
+				code: "passivephysics",
+				groundDragFactor: 1,
+				airDragFallingFactor: 0.25,
+				gravityFactor: 0
+			},
+			{ code: "despawn", minSeconds: 10 }
+		],
+	},
+	sounds: {
+	}
+}

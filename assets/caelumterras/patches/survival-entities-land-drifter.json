@@ -1,0 +1,69 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "rangedattack",
+      "entityCodes": [
+        "player"
+      ],
+      "priority": 1.75,
+      "mincooldown": 3500,
+      "maxcooldown": 4500,
+      "projectiles": [
+        {
+          "projectileEntityCode": "game:thrownstone-basalt",
+          "damage": 1,
+          "weight": 1,
+          "dropChance": 0.1,
+          "stack": {
+            "type": "item",
+            "code": "game:stone-basalt"
+          }
+        }
+      ],
+      "minDist": 3,
+      "minVerDist": 3,
+      "maxDist": 20,
+      "maxVertDist": 15,
+      "shotVelocity": 0.8,
+      "spreadAngle": 10,
+      "animation": "attack",
+      "animationSpeed": 1.5
+    },
+    "file": "game:entities/land/drifter.json"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/8/aitasks/-",
+    "value": {
+      "code": "seekcarrion",
+      "movespeed": 0.01,
+      "priority": 1.45,
+      "eatTime": 2,
+      "animation": "shamble",
+      "eatAnimation": "cry",
+      "mincooldownHours": 0,
+      "maxcooldownHours": 0
+    },
+    "file": "game:entities/land/drifter.json"
+  },
+  {
+    "op": "replace",
+    "path": "/server/spawnconditions/runtime/maxLightLevel",
+    "value" : null,
+    "file": "game:entities/land/drifter.json"
+  },
+  {
+    "op": "add",
+    "path": "/server/spawnconditions/runtime/maxLightLevelByType",
+    "value": {
+      "*-normal": 7,
+      "*-deep": 32,
+      "*-tainted": 32,
+      "*-corrupt": 32,
+      "*-nightmare": 32
+    },
+    "file": "game:entities/land/drifter.json"
+  }
+]

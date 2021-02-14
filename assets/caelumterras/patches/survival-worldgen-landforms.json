@@ -1,0 +1,395 @@
+[
+  {
+    "op": "add",
+    "path": "/variants/-",
+    "value": {
+        "code": "plateufloating",
+        "comment": "Plateu floating landmass",
+        "hexcolor": "#7BE02E",
+        "weight": 4,
+        "useClimateMap": false,
+        "terrainOctaves": [
+          0,
+          0,
+          0,
+          0.25,
+          0.3,
+          1,
+          1,
+          0.7,
+          0.15
+        ],
+        "terrainOctaveThresholds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "terrainYKeyPositions": [
+          0,
+          0.3,
+          0.4,
+          0.45,
+          0.455,
+          0.495,
+          0.505,
+          0.525,
+          0.535
+        ],
+        "terrainYKeyThresholds": [
+          0.5,
+          0,
+          0,
+          0.35,
+          0.3,
+          0.3,
+          0.09,
+          0.09,
+          0
+        ]
+      },
+      "file": "game:worldgen/landforms.json"
+    },
+    {
+      "op": "add",
+      "path": "/variants/-",
+      "value": {
+        "code": "mountainfloating",
+        "comment": "Mountainous island",
+        "hexcolor": "#7CE02E",
+        "weight": 1,
+        "useClimateMap": false,
+        "terrainOctaves": [
+          0,
+          0,
+          0,
+          0.25,
+          0.3,
+          1,
+          1,
+          0.7,
+          0.15
+        ],
+        "terrainOctaveThresholds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "terrainYKeyPositions": [
+          0,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          1
+        ],
+        "terrainYKeyThresholds": [
+          0.5,
+          0,
+          0,
+          0.35,
+          0.25,
+          0
+        ]
+      },
+    "file": "game:worldgen/landforms.json"
+      },
+
+      {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+          "code": "hillsfloating",
+          "comment": "The generic hilly floating island",
+          "hexcolor": "#7DE02E",
+          "weight": 6,
+          "useClimateMap": false,
+          "terrainOctaves": [
+            0,
+            0,
+            0,
+            0.25,
+            0.3,
+            1,
+            1,
+            0.7,
+            0.15
+          ],
+          "terrainOctaveThresholds": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "terrainYKeyPositions": [
+            0,
+            0.3,
+            0.4,
+            0.45,
+            0.5,
+            0.52,
+            0.6
+          ],
+          "terrainYKeyThresholds": [
+            0.5,
+            0,
+            0,
+            0.35,
+            0.35,
+            0.1,
+            0
+          ]
+        },
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/0/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/1/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/2/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/3/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/4/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/5/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/6/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/7/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/8/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/9/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/10/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/11/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/12/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/13/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/14/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/15/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/16/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/17/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/18/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/19/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/20/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/21/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/22/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/23/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/24/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/25/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/26/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/27/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/28/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/29/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/30/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/31/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/32/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/33/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/34/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/35/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/36/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/37/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      },
+      {
+        "op": "replace",
+        "path": "/variants/38/weight",
+        "value": 0,
+        "file": "game:worldgen/landforms.json"
+      }
+]

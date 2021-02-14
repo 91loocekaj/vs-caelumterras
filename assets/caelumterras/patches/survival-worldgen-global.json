@@ -1,0 +1,14 @@
+[
+  {
+    "op": "replace",
+    "path": "/mantleBlockCode",
+    "value": "caelumterras:mantle-fiery",
+    "file": "game:worldgen/global.json"
+  },
+  {
+    "op": "replace",
+    "path": "/waterBlockCode",
+    "value": "air",
+    "file": "game:worldgen/global.json"
+  }
+]

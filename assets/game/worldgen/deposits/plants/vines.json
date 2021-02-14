@@ -1,0 +1,15 @@
+[
+	{
+		code: "vines",
+		triesPerChunk: 7,
+		generator: "disc-followsealevel",
+		withBlockCallback: true,
+		attributes: {
+			inblock: { code: "air" },
+			placeblock: { code: "wildvine-section-east" },
+			radius: { dist: "gaussian", avg: 10, var: 10 },
+			yPosRel: {dist: "uniform", avg: 1, var: 0.1 },
+			thickness: { avg: 7, var: 3 }
+		}
+	}
+]

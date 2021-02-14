@@ -1,0 +1,8 @@
+[
+  {
+    "op": "replace",
+    "path": "/chanceMultiplier",
+    "value": 4.2,
+    "file": "game:worldgen/structures.json"
+  }
+]

@@ -1,0 +1,123 @@
+{
+  code: "locust-drone",
+	class: "EntityLocustDrone",
+	habitat: "Air",
+	hitboxSize: { x: 0.85, y: 1 },
+  deadHitboxSize: { x: 1, y: 0.4 },
+  eyeHeight: 0.5,
+  attributes: {
+		spawnDamageParticles: true,
+		isMechanical: true
+	},
+  drops: [
+    {
+      type: "block",
+      code: "game:metal-parts",
+      quantity: { avg: 0.5, var: 0.25 }
+    },
+    {
+      type: "block",
+      code: "game:metal-scraps",
+      quantity: { avg: 0.75, var: 0.5 }
+    }
+  ],
+	client: {
+		renderer: "Shape",
+		shape: { base: "entity/air/locust-drone" },
+    behaviors: [
+			{ code: "controlledphysics", stepHeight: 1.0001 },
+		  { code: "interpolateposition" },
+			{ code: "floatupwhenstuck", onlyWhenDead: true },
+			{ code: "repulseagents" }
+		],
+    animations: [
+			{
+				code: "fly",
+				animation: "Fly",
+				animationSpeed: 5,
+				weight: 1,
+				blendMode: "Average",
+			},
+      {
+				code: "die",
+				animation: "Die",
+				animationSpeed: 2,
+				weight: 10,
+				blendMode: "Average",
+				triggeredBy: { onControls: ["dead"] }
+			}
+		]
+	},
+	server: {
+		attributes: {
+			pathfinder: {
+				minTurnAnglePerSec: 900,
+				maxTurnAnglePerSec: 1800
+			}
+		},
+		behaviors: [
+			{ code: "controlledphysics", stepHeight: 1.0001 },
+      { code: "repulseagents" },
+      { code: "controlledphysics", stepHeight: 1.0001 },
+      { code: "deaddecay", hoursToDecay: 24 },
+			{ code: "despawn", minPlayerDistance: 30, minSeconds: 900 },
+      { code: "health", currenthealth: 6, maxhealth: 6 },
+			{
+				code: "taskai",
+				aitasks: [
+					{
+						code: "rangedattack",
+						entityCodes: ["player"],
+						priority: 2,
+						mincooldown: 1500,
+						maxcooldown: 4500,
+            damagePlayerAtMs: 0,
+            spreadAngle: 0,
+            projectiles: [
+              {
+                projectileEntityCode: "caelumterras:caltrop",
+                damage: 2,
+                weight: 1,
+                dropChance: 0,
+                stack: {
+                  type: "block",
+                  code: "game:metal-scraps",
+                  quantity: 0
+                },
+              }
+            ],
+						minDist: 0,
+						minVerDist: 0,
+            maxDist: 45,
+            maxVertDist: 25,
+            bodyPitch: true,
+						sound: "caelumterras:creature/drone/droneshot"
+					},
+					{
+						code: "wander",
+						priority: 1.0,
+						movespeed: 0.005,
+						maxHeight: 15
+					}
+				]
+			}
+		],
+    spawnconditions: {
+      runtime: {
+        group: "hostile",
+        maxQuantity: 6,
+        maxLightLevel: 32,
+        chance: 0.1,
+        lightLevelType: "MaxTimeOfDayLight",
+        groupSize:{ dist: "uniform", avg: 2, var: 1 },
+        insideBlockCodes: ["game:air"],
+        maxY: 0.89,
+        minY: 0
+      }
+    }
+	},
+	sounds: {
+    hurt: "game:creature/locust/hurt",
+		death: "game:creature/locust/death"
+	}
+}

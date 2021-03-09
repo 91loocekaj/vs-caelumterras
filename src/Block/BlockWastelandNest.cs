@@ -4,7 +4,7 @@ using Vintagestory.GameContent;
 
 namespace CaelumTerras
 {
-    public class BlockWastelandNest:BlockLocustNest
+    public class BlockWastelandNest : BlockLocustNest
     {
         public override void OnLoaded(ICoreAPI api)
         {

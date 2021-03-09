@@ -8,11 +8,6 @@ namespace CaelumTerras
 {
     public class BlockFieryMantle : Block
     {
-
-        /// <summary>
-        /// Data structure returned to the tick system to be used by this block in order to
-        /// initialize the BEFire with the right BlockFacing value.
-        /// </summary>
         private class FireLocation
         {
             public readonly BlockPos firePos;
@@ -24,14 +19,10 @@ namespace CaelumTerras
                 this.facing = facing;
             }
         }
-        /// <summary>
-        /// Temperature of lava. Controls determining whether an item should burn
-        /// </summary>
+
         private readonly int temperature = 1200;
 
-        /// <summary>
-        /// Amount of temperature is decreased for each one block distance away from lava(Manhattan distance)
-        /// </summary>
+
         private readonly int tempLossPerMeter = 100;
 
         private Block blockFire;
@@ -62,12 +53,7 @@ namespace CaelumTerras
             }
         }
 
-        /// <summary>
-        /// Searches for an air block next to a combustible block
-        /// </summary>
-        /// <param name="world"></param>
-        /// <param name="lavaPos"></param>
-        /// <returns>The position of the air block next to a combustible block</returns>
+
         private FireLocation SearchAreaForAirNextToCombustibleBlock(IWorldAccessor world, BlockPos lavaPos)
         {
             FireLocation combustibleBlockPos = SearchRadiusForAirNextToCombustibleBlock(world, lavaPos, 1, 2);
@@ -82,14 +68,7 @@ namespace CaelumTerras
             return combustibleBlockPos;
         }
 
-        /// <summary>
-        /// Searches a given horizontal radius for an air block next to a combustible block
-        /// </summary>
-        /// <param name="world"></param>
-        /// <param name="lavaPos"></param>
-        /// <param name="y">Current y level</param>
-        /// <param name="radius">Horizontal Radius</param>
-        /// <returns></returns>
+
         private FireLocation SearchRadiusForAirNextToCombustibleBlock(IWorldAccessor world, BlockPos lavaPos, int y, int radius)
         {
             for (int x = -radius; x <= radius; x++)
@@ -108,14 +87,7 @@ namespace CaelumTerras
             return null;
         }
 
-        /// <summary>
-        /// Returns true if the given air block position is next to a combustible block, false otherwise. The
-        /// block must be combustible and at a burnable temperature
-        /// </summary>
-        /// <param name="world"></param>
-        /// <param name="lavaPos"></param>
-        /// <param name="airBlockPos"></param>
-        /// <returns></returns>
+
         private BlockFacing IsNextToCombustibleBlock(IWorldAccessor world, BlockPos lavaPos, BlockPos airBlockPos)
         {
             Block airBlock = world.BlockAccessor.GetBlock(airBlockPos);
@@ -137,12 +109,7 @@ namespace CaelumTerras
             return null;
         }
 
-        /// <summary>
-        /// Returns the temperature at the given location based on it's distance from the lava.
-        /// </summary>
-        /// <param name="lavaPos"></param>
-        /// <param name="airBlockPos"></param>
-        /// <returns></returns>
+
         private int GetTemperatureAtLocation(BlockPos lavaPos, BlockPos airBlockPos)
         {
             int distance = lavaPos.ManhattenDistance(airBlockPos);

@@ -4,7 +4,7 @@
   "name": "Caelum Terras",
   "author": "jakecool19",
   "description": "Changes world generation to sky islands.",
-  "version": "0.92.2",
+  "version": "1.0.0",
   "dependency": {
     "game": ""
   }

@@ -36,23 +36,6 @@ namespace CaelumTerras
             }
         }
 
-        public override void OnServerGameTick(IWorldAccessor world, BlockPos pos, object extra = null)
-        {
-            base.OnServerGameTick(world, pos, extra);
-
-            if (blockFire == null)
-            {
-                blockFire = world.GetBlock(new AssetLocation("fire"));
-            }
-            FireLocation fireLocation = (FireLocation)extra;
-            world.BlockAccessor.SetBlock(blockFire.BlockId, fireLocation.firePos);
-            BlockEntityFire befire = world.BlockAccessor.GetBlockEntity(fireLocation.firePos) as BlockEntityFire;
-            if (befire != null)
-            {
-                befire.Init(fireLocation.facing, null);
-            }
-        }
-
 
         private FireLocation SearchAreaForAirNextToCombustibleBlock(IWorldAccessor world, BlockPos lavaPos)
         {
